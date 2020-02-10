@@ -14,8 +14,8 @@ private JButton solitaire;
 private JButton spit;
 private JButton slapjack;
 private JButton roulette;
-Image background = new ImageIcon("res/MainMenuBackground.jpg").getImage();
-Image CasinoAndMoreLogo = new ImageIcon("res/CasinoAndMoreLogo.png").getImage();
+Image background = new ImageIcon("Casino and More/res/MainMenuBackground.jpg").getImage();
+Image CasinoAndMoreLogo = new ImageIcon("Casino and More/res/CasinoAndMoreLogo.png").getImage();
 
 @Override
     public void paintComponent(Graphics g){
@@ -26,7 +26,7 @@ Image CasinoAndMoreLogo = new ImageIcon("res/CasinoAndMoreLogo.png").getImage();
 
 public MainMenu(){
     //settings button
-    Image tempSetting = new ImageIcon("res/SettingsButton.png").getImage();
+    Image tempSetting = new ImageIcon("Casino and More/res/SettingsButton.png").getImage();
     Image tempSettingImg = tempSetting.getScaledInstance(50,50,java.awt.Image.SCALE_SMOOTH);
     Icon settingsButton = new ImageIcon(tempSettingImg);
     this.setLayout(null);
@@ -39,7 +39,7 @@ public MainMenu(){
 
 
     //how to play / information button
-    Image tempHowTo = new ImageIcon("res/InformationHowToIcon.jpg").getImage();
+    Image tempHowTo = new ImageIcon("Casino and More/res/InformationHowToIcon.jpg").getImage();
     Image tempHowToImg = tempHowTo.getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH);
     Icon howToButton = new ImageIcon(tempHowToImg);
     howTo = new JButton(howToButton);
@@ -50,7 +50,7 @@ public MainMenu(){
     howTo.setFocusPainted(false);
 
     //blackjack logo button
-    Image tempBlackjack = new ImageIcon("res/BlackJackMenuLogo.png").getImage();
+    Image tempBlackjack = new ImageIcon("Casino and More/res/BlackJackMenuLogo.png").getImage();
     Image tempBlackjackImg = tempBlackjack.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
     Icon blackjackButton = new ImageIcon(tempBlackjackImg);
     blackjack = new JButton(blackjackButton);
@@ -59,7 +59,7 @@ public MainMenu(){
     blackjack.setFocusPainted(false);
 
     //solitaire logo button
-    Image tempSolitaire = new ImageIcon("res/SolitaireMenuLogo.png").getImage();
+    Image tempSolitaire = new ImageIcon("Casino and More/res/SolitaireMenuLogo.png").getImage();
     Image tempSolitaireImg = tempSolitaire.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
     Icon solitaireButton = new ImageIcon(tempSolitaireImg);
     solitaire = new JButton(solitaireButton);
@@ -68,7 +68,7 @@ public MainMenu(){
     solitaire.setFocusPainted(false);
 
 
-    Image tempSpit = new ImageIcon("res/SpitMenuLogo.png").getImage();
+    Image tempSpit = new ImageIcon("Casino and More/res/SpitMenuLogo.png").getImage();
     Image tempSpitImg = tempSpit.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
     Icon SpitButton = new ImageIcon(tempSpitImg);
     spit = new JButton(SpitButton);
@@ -77,7 +77,7 @@ public MainMenu(){
     spit.setFocusPainted(false);
 
     
-    Image tempSlapjack = new ImageIcon("res/SlapJackMenuLogo.jpg").getImage();
+    Image tempSlapjack = new ImageIcon("Casino and More/res/SlapJackMenuLogo.jpg").getImage();
     Image tempSlapjackImg = tempSlapjack.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
     Icon SlapJackButton = new ImageIcon(tempSlapjackImg);
     slapjack = new JButton(SlapJackButton);
@@ -86,7 +86,7 @@ public MainMenu(){
     slapjack.setFocusPainted(false);
 
 
-    Image tempRoulette = new ImageIcon("res/RouletteMenuLogo.png").getImage();
+    Image tempRoulette = new ImageIcon("Casino and More/res/RouletteMenuLogo.png").getImage();
     Image tempRouletteImg = tempRoulette.getScaledInstance(400,150,java.awt.Image.SCALE_SMOOTH);
     Icon RouletteButton = new ImageIcon(tempRouletteImg);
     roulette = new JButton(RouletteButton);

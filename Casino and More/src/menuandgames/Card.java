@@ -1,10 +1,11 @@
 
 package menuandgames;
-
+// The cards in the deck
 public class Card {
 	private enum Suit {SPADES, HEARTS, CLUBS, DIAMONDS}
 	private int num;
-	private Suit suit;
+    private Suit suit;
+    private String img;
 	
 	public Card(int num, int suit) {
         this.num = num + 1;
@@ -29,5 +30,9 @@ public class Card {
 	
 	public Suit getSuit() {
         return suit;
-	}
+    }
+    
+    public String getImg() {
+        return img;
+    }
 }

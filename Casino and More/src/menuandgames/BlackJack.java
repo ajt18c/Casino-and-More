@@ -8,10 +8,12 @@ public class BlackJack extends JPanel{
     private Deck deck;
 
     BlackJack() {
+        deck = new Deck();
 
+        
     }
 
-    public static void newGame() {
-
+    public void newGame() {
+        deck.shuffle();
     }
 }

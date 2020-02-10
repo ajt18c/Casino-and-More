@@ -18,4 +18,11 @@ public class Deck {
 		Card temp = cards.remove(index);
 		return temp;
 	}
+
+	public void shuffle() {
+		cards.clear();
+		for(int i = 1; i <= 52; i++) {
+			cards.add(new Card(i%13, i%4));
+		}
+	}
 }
