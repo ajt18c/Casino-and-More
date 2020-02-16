@@ -1,0 +1,170 @@
+How To Play
+
+
+_______     BlackJack   _______
+
+Objective: Each participant attempts to beat the dealer by getting a count as
+close to 21 as possible, without going over 21.
+
+Card Values: It is up to each individual player if an ace is worth 1 or 11.
+Face cards are 10 and any other card is its pip value.
+
+Betting: Before the deal begins, each player places a bet, in chips, in front
+of them in the designated area. Minimum and maximum limits are established on
+the betting.
+
+Game Play: Game begins when all players enter starting bet. Dealer then deals 2 cards
+to each player staring with the player directly left of the dealer. Player can choose
+to either "stand"(not ask for another card) or "hit"(ask for another card in an
+attempt to get closer to a count of 21, or even hit 21 exactly). When a player's card
+ values go over 21 that is called "bust" and the dealer will collect your wages bet.
+
+Dealer's Play: When the dealer has served every player, the dealers face-down card is
+turned up. If the total is 17 or more, it must stand. If the total is 16 or under, they
+must take a card. The dealer must continue to take cards until the total is 17 or more,
+at which point the dealer must stand.
+
+Splitting Pairs:If a player's first two cards are of the same denomination, such as
+two jacks or two sixes, they may choose to treat them as two separate hands when
+their turn comes around. The amount of the original bet then goes on one of the cards,
+and an equal amount must be placed as a bet on the other card. The player first plays
+the hand to their left by standing or hitting one or more times; only then is the hand
+to the right played. The two hands are thus treated separately, and the dealer settles
+with each on its own merits.
+
+
+Doubling Down: Another option open to the player is doubling their bet when the original
+two cards dealt total 9, 10, or 11. When the player's turn comes, they place a bet equal
+to the original bet, and the dealer gives the player just one card, which is placed
+face down and is not turned up until the bets are settled at the end of the hand.
+With two fives, the player may split a pair, double down, or just play the hand in
+the regular way.
+
+
+
+________   Solitaire   _______
+
+Objective: The first objective is to release and play into position certain cards to
+build up each foundation, in sequence and in suit, from the ace through the king.
+The ultimate objective is to build the whole pack onto the foundations, and if that
+can be done, the Solitaire game is won.
+
+Card Values: The rank of cards in Solitaire games is: K (high), Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2, A (low).
+
+The Deal: There are four different types of piles in Solitaire:
+
+The Tableau: Seven piles that make up the main table.
+The Foundations: Four piles on which a whole suit or sequence must be built up. In most Solitaire
+games, the four aces are the bottom card or base of the foundations. The foundation piles are hearts, diamonds, spades, and clubs.
+The Stock (or “Hand”) Pile: If the entire pack is not laid out in a tableau at the beginning
+of a game, the remaining cards form the stock pile from which additional cards are brought into play according to the rules.
+The Talon (or “Waste”) Pile: Cards from the stock pile that have no place in the tableau or on foundations are laid face
+up in the waste pile.
+
+To form the tableau, seven piles need to be created. Starting from left to right,
+place the first card face up to make the first pile, deal one card face down for the next six piles.
+Starting again from left to right, place one card face up on the second pile and deal one card face down on piles
+three through seven. Starting again from left to right, place one card face up on the third pile and deal one card face
+down on piles four through seven. Continue this pattern until pile seven has one card facing up on top of a pile of six cards
+facing down.
+
+The remaining cards form the stock (or “hand”) pile and are placed above the tableau.
+
+When starting out, the foundations and waste pile do not have any cards.
+
+Game Play: The initial array may be changed by "building" - transferring cards among the face-up cards in the tableau.
+Certain cards of the tableau can be played at once, while others may not be played until certain blocking cards are removed.
+For example, of the seven cards facing up in the tableau, if one is a nine and another is a ten, you may transfer the
+nine to on top of the ten to begin building that pile in sequence. Since you have moved the nine from one of the seven piles,
+you have now unblocked a face down card; this card can be turned over and now is in play.
+
+Continue to transfer cards on top of each other in the tableau in sequence. If you can’t move any more face up cards,
+you can utilize the stock pile by flipping over the first card. This card can be played in the foundations or tableau.
+If you cannot play the card in the tableau or the foundations piles, move the card to the waste pile and turn over
+another card in the stock pile.
+
+Continue to transfer cards in the tableau and bring cards into play from the stock pile until all the cards are built
+in suit sequences in the foundation piles to win!
+
+
+
+
+________   Spit  ________
+
+Objective: The winner is the first player to get rid of all of their cards.
+
+Card Values: 2 decks of cards, A (high or low) K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2.
+
+Set-Up: Each player has their own deck and begins by placing the top four cards from their deck face up in front of
+ them in a row. There should be lots of empty space in the middle of the table between the two players. (In fact it is
+ best to play on the floor, since cards often go flying once play starts.) Players hold the remainder of their deck in one
+ of their hands during play.
+
+
+Game Play: There are no turns taken in this game, everyone plays at the same time. When both players are ready, one of them
+says "spit" and immediately each player takes the top card from his deck and plays it to the center of the table.
+These first cards should be far away from each other, forming two play piles between the players. Players immediately begin playing
+their cards from their layout onto the center piles. A card can be played only if it is one higher or one lower than the card on the top of the pile.
+The card's suit does not matter, and an ace can be played high or low.
+
+The players continue to rapidly play cards to the center and replace cards in their rows until all players get
+ "stuck" and cannot make a play. Often several dozen cards can be played before all players get stuck. When all players
+ are stuck, they say "ready, spit," and again deal new starter cards to the top of each pile in the center. Play then continues as before.
+
+
+Score: When a player has played all the cards in their deck, they must continue play using only the cards left in their layout
+ (even though he will not have a card to "spit" with if all players get stuck). When that player "goes out" by playing the last card from
+ their layout row, they win. If both players have run out their decks and get stuck before going out, the player with the fewest cards left wins.
+
+
+
+________   American Roulette   ________
+
+Wheel: Virtually all American casinos use a double-zero roulette wheel which has pockets numbered from 1 to 36, plus 0 and 00 for a total of 38 pockets.
+
+Betting: You can make a straight bet where you only bet on one number and if it comes in you'll be paid 35-to-1.
+The casino advantage on this bet is 5.26% and by the time you're done with this roulette section I'm sure you'll be very familiar with that number.
+
+Another choice you have is to do a split. This is where you put a chip on the line that separates two numbers.
+ If either number comes up you'll be paid at 17-to-1. The casino advantage on this bet is 5.26%.
+
+If you put a chip in an area that splits 4 numbers this is called a corner bet and if any one of those 4 numbers comes in you will be paid off at 8-to-1.
+The casino advantage on this bet is 5.26%.
+
+If you put a chip at the beginning of a row of 3 numbers, this is called a street bet and if any one of those 3 numbers shows up you will be paid off at 11-to-1.
+The casino advantage on this bet is 5.26%.
+
+You can also put a chip on the line between two streets so that you have a double street covered and if any one of those 6 numbers
+come in you. ll be paid off at 5-to-1. The casino advantage on this bet is?... you guessed it...5.26%.
+
+Red or black - If you put a chip on red then a red number must come up in order for you to win. If the ball lands on a black number, 0 or 00 - you lose.
+The same thing goes for black - you lose if it comes in red, 0 or 00 and you win if the ball lands on a black number.
+
+Odd or even - If you put a chip on odd then the ball must land on an odd number in order for you to win. If it lands on 0, 00, or an even number - you lose.
+ If you bet on even, you win if an even number shows up and lose if the ball lands on 0, 00 or an odd number.
+
+1 through 18 and 19 through 36(high or low bet) - If you bet on 1 through 18, then you win if a number from 1 through 18 comes in and you lose if the ball lands
+ on 0, 00 or a number higher than 18. Similarly, if you bet on 19 through 36, you win if one of those numbers comes in and you lose on 0, 00 or any number lower than 19.
+
+The last bet to look at is the column bet and that is also a bet that pays 2-to-1. There are three possible column bets you can make and you'll
+notice that each area corresponds to the numbers in the column directly above it. So, if you put a chip under the first column you will win if any
+of the numbers in that column come in and you will lose if any other number, including 0 or 00 shows up.
+
+
+
+
+________  SlapJack  ________
+
+Objective: The goal is to win all the cards, by being first to slap each jack as it is played to the center.
+
+The Deal: Deal cards one at a time face down, to each player until all the cards have been dealt. The hands do not have to come out even.
+Without looking at any of the cards, each player squares up their hand into a neat pile in front of them.
+
+Game Play: Beginning on the dealer’s left, each player lifts one card at a time from their pile and places it face up in the center of the table.
+When the card played to the center is a jack, the fun begins! The first player to slap their hand down on the jack takes it, as well as all the cards
+ beneath it. The player winning these cards turns them face down, places them under their pile of cards, and shuffles them to form a new, larger pile.
+
+When more than one player slaps at a jack, the one whose hand is directly on top of the jack wins the pile. If a player slaps at any card in
+the center that is not a jack, they must give one card, face down, to the player of that card. When a player has no more cards left, they remain in
+the game until the next jack is turned. The player may slap at the jack in an effort to get a new pile. If the player fails to win
+ that next pile, they are out of the game.
