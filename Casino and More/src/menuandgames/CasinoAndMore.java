@@ -11,6 +11,10 @@ public CasinoAndMore(){
     //setting up background
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setSize(FRAME_WIDTH, FRAME_HEIGHT);
+    // To make full screen
+    // Add to settings?
+    //setExtendedState(JFrame.MAXIMIZED_BOTH); 
+    //setUndecorated(true);
     setLocationRelativeTo(null);
     setTitle("Casino and More");
 
