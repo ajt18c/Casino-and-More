@@ -15,7 +15,6 @@ public CasinoAndMore(){
     setTitle("Casino and More");
 
     add(new MainMenu());
-
     setResizable(false);
 }
 
@@ -24,8 +23,8 @@ public CasinoAndMore(){
         SwingUtilities.invokeLater(new Runnable(){
             @Override
             public void run(){
-                JFrame menu = new CasinoAndMore();
-                menu.setVisible(true);
+                JFrame screen = new CasinoAndMore();
+                screen.setVisible(true); //set mainmenu to be visible
             }
         });
     }
