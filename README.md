@@ -37,3 +37,5 @@ Version 0.0.3
 - Set up the beginning of each empty class for games, settings, and how to play to allow for background to display.
 
 2/16 (David)
+- Adjusted deck and card classes
+- Worked on blackjack game: added buttons and labels
