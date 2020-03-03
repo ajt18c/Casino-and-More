@@ -39,3 +39,4 @@ Version 0.0.3
 2/16 (David)
 - Adjusted deck and card classes
 - Worked on blackjack game: added buttons and labels
+- Added images for the cards
