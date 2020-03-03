@@ -20,9 +20,10 @@ public class BlackJack extends ScreenConfig{
     private JLabel dealerStatus;
     private Player[] players;
 
-    BlackJack(int numPlayers) {
+    BlackJack() {
         this.setLayout(null);
         deck = new Deck();
+        int numPlayers = 0;
         players = new BJPlayer[numPlayers];
 
         hit = new JButton("HIT");
