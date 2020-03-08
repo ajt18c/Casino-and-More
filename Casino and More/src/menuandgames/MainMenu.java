@@ -55,7 +55,7 @@ public class MainMenu extends ScreenConfig{
         Icon blackjackButton = new ImageIcon(tempBlackjackImg);
         blackjack = new JButton(blackjackButton);
         this.add(blackjack);
-        blackjack.setBounds(250, 400, 400, 175);
+        blackjack.setBounds(510, 400, 400, 175);
         blackjack.setFocusPainted(false);
         blackjack.addActionListener(new blackjackListener());
 
@@ -65,7 +65,7 @@ public class MainMenu extends ScreenConfig{
         Icon solitaireButton = new ImageIcon(tempSolitaireImg);
         solitaire = new JButton(solitaireButton);
         this.add(solitaire);
-        solitaire.setBounds(250, 650, 400, 175);
+        solitaire.setBounds(510, 650, 400, 175);
         solitaire.setFocusPainted(false);
         solitaire.addActionListener(new solitaireListener());
 
@@ -75,7 +75,7 @@ public class MainMenu extends ScreenConfig{
         Icon SpitButton = new ImageIcon(tempSpitImg);
         spit = new JButton(SpitButton);
         this.add(spit);
-        spit.setBounds(750, 400, 400, 175);
+        spit.setBounds(1010, 400, 400, 175);
         spit.setFocusPainted(false);
         spit.addActionListener(new spitListener());
 
@@ -85,19 +85,19 @@ public class MainMenu extends ScreenConfig{
         Icon SlapJackButton = new ImageIcon(tempSlapjackImg);
         slapjack = new JButton(SlapJackButton);
         this.add(slapjack);
-        slapjack.setBounds(750, 650, 400, 175);
+        slapjack.setBounds(1010, 650, 400, 175);
         slapjack.setFocusPainted(false);
         slapjack.addActionListener(new slapjackListener());
 
         //roulette logo button
-        Image tempRoulette = new ImageIcon("Casino and More/res/RouletteMenuLogo.png").getImage();
+        /*Image tempRoulette = new ImageIcon("Casino and More/res/RouletteMenuLogo.png").getImage();
         Image tempRouletteImg = tempRoulette.getScaledInstance(400,150,java.awt.Image.SCALE_SMOOTH);
         Icon RouletteButton = new ImageIcon(tempRouletteImg);
         roulette = new JButton(RouletteButton);
         this.add(roulette);
         roulette.setBounds(1250, 525, 400, 175);
         roulette.setFocusPainted(false);
-        roulette.addActionListener(new rouletteListener());
+        roulette.addActionListener(new rouletteListener());*/
     }
 }
 
@@ -179,7 +179,7 @@ class slapjackListener implements ActionListener {
     }
 }
 
-class rouletteListener implements ActionListener {
+/*class rouletteListener implements ActionListener {
     JFrame rouletteFrame = new JFrame();
 
     @Override
@@ -190,4 +190,4 @@ class rouletteListener implements ActionListener {
         Roulette roulette = new Roulette();
         rouletteFrame.add(roulette);
     }
-}
+}*/
