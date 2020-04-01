@@ -4,6 +4,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
 
+
 public class MainMenu extends ScreenConfig{
 
     private JButton settings;
@@ -19,7 +20,7 @@ public class MainMenu extends ScreenConfig{
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-    g.drawImage(CasinoAndMoreLogo, 600, 50, 720, 300, this); //add the logo to the mainmenu
+        g.drawImage(CasinoAndMoreLogo, 600, 50, 720, 300, this); //add the logo to the mainmenu
     }
 
 
@@ -55,7 +56,7 @@ public class MainMenu extends ScreenConfig{
         Icon blackjackButton = new ImageIcon(tempBlackjackImg);
         blackjack = new JButton(blackjackButton);
         this.add(blackjack);
-        blackjack.setBounds(510, 400, 400, 175);
+        blackjack.setBounds(280, 400, 400, 175);
         blackjack.setFocusPainted(false);
         blackjack.addActionListener(new blackjackListener());
 
@@ -65,7 +66,7 @@ public class MainMenu extends ScreenConfig{
         Icon solitaireButton = new ImageIcon(tempSolitaireImg);
         solitaire = new JButton(solitaireButton);
         this.add(solitaire);
-        solitaire.setBounds(510, 650, 400, 175);
+        solitaire.setBounds(280, 650, 400, 175);
         solitaire.setFocusPainted(false);
         solitaire.addActionListener(new solitaireListener());
 
@@ -75,7 +76,7 @@ public class MainMenu extends ScreenConfig{
         Icon SpitButton = new ImageIcon(tempSpitImg);
         spit = new JButton(SpitButton);
         this.add(spit);
-        spit.setBounds(1010, 400, 400, 175);
+        spit.setBounds(780, 400, 400, 175);
         spit.setFocusPainted(false);
         spit.addActionListener(new spitListener());
 
@@ -85,19 +86,19 @@ public class MainMenu extends ScreenConfig{
         Icon SlapJackButton = new ImageIcon(tempSlapjackImg);
         slapjack = new JButton(SlapJackButton);
         this.add(slapjack);
-        slapjack.setBounds(1010, 650, 400, 175);
+        slapjack.setBounds(780, 650, 400, 175);
         slapjack.setFocusPainted(false);
         slapjack.addActionListener(new slapjackListener());
 
         //roulette logo button
-        /*Image tempRoulette = new ImageIcon("Casino and More/res/RouletteMenuLogo.png").getImage();
+        Image tempRoulette = new ImageIcon("Casino and More/res/RouletteMenuLogo.png").getImage();
         Image tempRouletteImg = tempRoulette.getScaledInstance(400,150,java.awt.Image.SCALE_SMOOTH);
         Icon RouletteButton = new ImageIcon(tempRouletteImg);
         roulette = new JButton(RouletteButton);
         this.add(roulette);
         roulette.setBounds(1250, 525, 400, 175);
         roulette.setFocusPainted(false);
-        roulette.addActionListener(new rouletteListener());*/
+        roulette.addActionListener(new rouletteListener());
     }
 }
 
@@ -122,8 +123,14 @@ class howToListener implements ActionListener {
         howToFrame.setSize(1920,1080);
         howToFrame.setVisible(true);
         howToFrame.setResizable(false);
-        HowToPlay howToPlay = new HowToPlay();
-        howToFrame.add(howToPlay);
+
+        JTextArea textArea = new JTextArea();
+        JScrollPane scroll = new JScrollPane(textArea);
+        scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        howToFrame.add(new HowToPlay(textArea));
+        howToFrame.add(scroll);
+        textArea.setCaretPosition(0);
     }
 }
 
@@ -179,15 +186,16 @@ class slapjackListener implements ActionListener {
     }
 }
 
-/*class rouletteListener implements ActionListener {
-    JFrame rouletteFrame = new JFrame();
+class rouletteListener implements ActionListener {
+    JFrame screen = new JFrame("Roulette");
 
     @Override
     public void actionPerformed(ActionEvent event){
-        rouletteFrame.setSize(1920,1080);
-        rouletteFrame.setVisible(true);
-        rouletteFrame.setResizable(false);
-        Roulette roulette = new Roulette();
-        rouletteFrame.add(roulette);
+        screen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //close app when exit button is hit
+        screen.setSize(1200,800); //set default size to 1200,800
+        screen.setVisible(true);
+        screen.setResizable(false);
+        Roulette roulette = new Roulette(); //add a new a Roulettepanel (JPanel) into the JFrame
+        screen.add(roulette);
     }
-}*/
+}
