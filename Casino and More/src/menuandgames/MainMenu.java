@@ -12,14 +12,14 @@ public class MainMenu extends ScreenConfig{
     private JButton solitaire;
     private JButton spit;
     private JButton slapjack;
-    private JButton roulette;
+    //private JButton roulette;
 
     Image CasinoAndMoreLogo = new ImageIcon("Casino and More/res/CasinoAndMoreLogo.png").getImage();
 
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-    g.drawImage(CasinoAndMoreLogo, 600, 50, 720, 300, this); //add the logo to the mainmenu
+        g.drawImage(CasinoAndMoreLogo, 600, 50, 720, 300, this); //add the logo to the mainmenu
     }
 
 
