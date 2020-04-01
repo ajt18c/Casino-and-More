@@ -1,42 +1,47 @@
 
 package menuandgames;
+
+import java.awt.Image;
+import javax.swing.ImageIcon;
 // The cards in the deck
 public class Card {
+    private static Image back = new ImageIcon("Casino and More/res/cards/backs/StockCardBack.png").getImage();
 	private enum Suit {SPADES, HEARTS, CLUBS, DIAMONDS}
-	private int num;
+	private int val;
     private Suit suit;
-    private String img;
+    private Image img;
 	
 	public Card(int num, int suit) {
-        this.num = num + 1;
-        img  = String.valueOf(num);
+        val = num + 1;
         switch(suit){
             case 0:
                 this.suit = Suit.SPADES;
-                img += "spade";
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "spade.png").getImage();
                 break;
             case 1:
                 this.suit = Suit.HEARTS;
-                img += "heart";
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "heart.png").getImage();
                 break;
             case 2:
                 this.suit = Suit.CLUBS;
-                img += "club";
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "club.png").getImage();
                 break;
             case 3:
                 this.suit = Suit.DIAMONDS;
-                img += "diamond";
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "diamond.png").getImage();
         }
 	}
-	
-	public int getNum() {
-		return num;
+    
+    public static void setBack(String imgLocation) {
+        back = new ImageIcon(imgLocation).getImage();
     }
 
-    
+	public int getVal() {
+		return val;
+    }
     
     public String getName() {
-        switch(num) {
+        switch(val) {
             case 1:
                 return "Ace";
             case 11:
@@ -46,7 +51,7 @@ public class Card {
             case 13:
                 return "King";
             default:
-                return String.valueOf(num);
+                return String.valueOf(val);
         }
     }
 	
@@ -54,7 +59,11 @@ public class Card {
         return suit;
     }
     
-    public String getImg() {
+    public Image getImg() {
         return img;
+    }
+
+    public static Image getBack() {
+        return back;
     }
 }

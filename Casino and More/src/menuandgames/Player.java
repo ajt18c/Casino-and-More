@@ -13,9 +13,13 @@ public abstract class Player {
 		hand.add(card);
 	}
 	
-	public ArrayList<Card> getHand(){
+	public ArrayList<Card> getHand() {
 		return hand;
-	}
+    }
+    
+    public Card getCard(int i) {
+        return hand.get(i);
+    }
 }
 
 class BJPlayer extends Player {
@@ -31,14 +35,14 @@ class BJPlayer extends Player {
     @Override
     public void draw(Card card) {
         super.draw(card);
-        if(card.getNum() > 10)
+        if(card.getVal() > 10)
             total += 10;
-        else if(card.getNum() == 1) {
+        else if(card.getVal() == 1) {
             total += 11;
             aces++;
         }
         else
-            total += card.getNum();
+            total += card.getVal();
         
         while(total > 21 && aces > 0) {
             total -= 10;
