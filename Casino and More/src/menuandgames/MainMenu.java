@@ -11,9 +11,9 @@ public class MainMenu extends ScreenConfig{
     private JButton howTo;
     private JButton blackjack;
     private JButton solitaire;
-    private JButton spit;
-    private JButton slapjack;
-    //private JButton roulette;
+    //private JButton spit;
+    //private JButton slapjack;
+    private JButton roulette;
 
     Image CasinoAndMoreLogo = new ImageIcon("Casino and More/res/CasinoAndMoreLogo.png").getImage();
 
@@ -70,7 +70,9 @@ public class MainMenu extends ScreenConfig{
         solitaire.setFocusPainted(false);
         solitaire.addActionListener(new solitaireListener());
 
+        
         //spit logo button
+        /*
         Image tempSpit = new ImageIcon("Casino and More/res/SpitMenuLogo.png").getImage();
         Image tempSpitImg = tempSpit.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
         Icon SpitButton = new ImageIcon(tempSpitImg);
@@ -79,8 +81,11 @@ public class MainMenu extends ScreenConfig{
         spit.setBounds(780, 400, 400, 175);
         spit.setFocusPainted(false);
         spit.addActionListener(new spitListener());
+        */
+
 
         //slapjack logo button
+        /*
         Image tempSlapjack = new ImageIcon("Casino and More/res/SlapJackMenuLogo.jpg").getImage();
         Image tempSlapjackImg = tempSlapjack.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
         Icon SlapJackButton = new ImageIcon(tempSlapjackImg);
@@ -89,6 +94,7 @@ public class MainMenu extends ScreenConfig{
         slapjack.setBounds(780, 650, 400, 175);
         slapjack.setFocusPainted(false);
         slapjack.addActionListener(new slapjackListener());
+        */
 
         //roulette logo button
         Image tempRoulette = new ImageIcon("Casino and More/res/RouletteMenuLogo.png").getImage();
@@ -124,13 +130,13 @@ class howToListener implements ActionListener {
         howToFrame.setVisible(true);
         howToFrame.setResizable(false);
 
-        JTextArea textArea = new JTextArea();
-        JScrollPane scroll = new JScrollPane(textArea);
-        scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        JTextArea textArea = new JTextArea(); //actual text box area for text to display
+        JScrollPane scroll = new JScrollPane(textArea); //gives ability to see entire document by scrolling
+        scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS); //set a vertical bar at all times
+        scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); //never have a horizontal bar
         howToFrame.add(new HowToPlay(textArea));
         howToFrame.add(scroll);
-        textArea.setCaretPosition(0);
+        textArea.setCaretPosition(0); //start at the top of the document when clicked on
     }
 }
 
@@ -146,7 +152,7 @@ class blackjackListener implements ActionListener {
         blackjackFrame.add(blackjack);
     }
 }
-
+/*
 class spitListener implements ActionListener {
     JFrame spitFrame = new JFrame();
 
@@ -159,7 +165,7 @@ class spitListener implements ActionListener {
         spitFrame.add(spit);
     }
 }
-
+*/
 class solitaireListener implements ActionListener {
     JFrame solitaireFrame = new JFrame();
 
@@ -172,7 +178,7 @@ class solitaireListener implements ActionListener {
         solitaireFrame.add(solitaire);
     }
 }
-
+/*
 class slapjackListener implements ActionListener {
     JFrame slapjackFrame = new JFrame();
 
@@ -185,13 +191,12 @@ class slapjackListener implements ActionListener {
         slapjackFrame.add(slapjack);
     }
 }
-
+*/
 class rouletteListener implements ActionListener {
     JFrame screen = new JFrame("Roulette");
 
     @Override
     public void actionPerformed(ActionEvent event){
-        screen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //close app when exit button is hit
         screen.setSize(1200,800); //set default size to 1200,800
         screen.setVisible(true);
         screen.setResizable(false);

@@ -13,12 +13,12 @@ public class HowToPlay extends ScreenConfig{
     }
 
     public HowToPlay(JTextArea area){
-        area.setEditable(false);
+        area.setEditable(false); //dont let text be editable
         area.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 16));
         
         try{
-            String str = new String(Files.readAllBytes(Paths.get("Casino and More/res/howtoplay.txt")));
-            area.append(str);
+            String str = new String(Files.readAllBytes(Paths.get("Casino and More/res/howtoplay.txt"))); //grab entire txt document
+            area.append(str); //add file to textarea
         }
         catch(IOException e){}
     }
