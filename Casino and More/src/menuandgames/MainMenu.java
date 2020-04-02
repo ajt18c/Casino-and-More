@@ -13,7 +13,7 @@ public class MainMenu extends ScreenConfig{
     private JButton solitaire;
     private JButton spit;
     private JButton slapjack;
-    //private JButton roulette;
+    private JButton roulette;
 
     Image CasinoAndMoreLogo = new ImageIcon("Casino and More/res/CasinoAndMoreLogo.png").getImage();
 
