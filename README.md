@@ -40,3 +40,14 @@ Version 0.0.3
 - Adjusted deck and card classes
 - Worked on blackjack game: added buttons and labels
 - Added images for the cards
+
+Version 1.0.0
+4/2 (Brandon)
+-
+
+4/2 (Alex)
+-
+
+4/2 (David)
+- Adjusted Card (each card now holds an image instead of a path) and Deck
+- Created a working version of Blackjack with functional requirements
