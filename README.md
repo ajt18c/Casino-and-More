@@ -46,7 +46,9 @@ Version 1.0.0
 -
 
 4/2 (Alex)
--
+- Adjusted howToPlayListener to have a JTextArea and JScrollPane
+- Adjusted HowToPlay to read in the howtoplay.txt file and append to JTextArea passed into parameter
+- Added Roulette with all respectable buttons within and graphics/images. Money system has begun to get integrated as well
 
 4/2 (David)
 - Adjusted Card (each card now holds an image instead of a path) and Deck
