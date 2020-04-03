@@ -45,6 +45,7 @@ Version 1.0.0
 4/2 (Brandon)
 - Worked on Animations for Roulette
 - Finished wheel spin animation for Roulette
+- Still having issues compiling on mac(working on fixing that)
 
 4/2 (Alex)
 - Adjusted howToPlayListener to have a JTextArea and JScrollPane
