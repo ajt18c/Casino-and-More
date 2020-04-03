@@ -43,7 +43,8 @@ Version 0.0.3
 
 Version 1.0.0
 4/2 (Brandon)
--
+- Worked on Animations for Roulette
+- Finished wheel spin animation for Roulette
 
 4/2 (Alex)
 - Adjusted howToPlayListener to have a JTextArea and JScrollPane
@@ -53,3 +54,5 @@ Version 1.0.0
 4/2 (David)
 - Adjusted Card (each card now holds an image instead of a path) and Deck
 - Created a working version of Blackjack with functional requirements
+
+
