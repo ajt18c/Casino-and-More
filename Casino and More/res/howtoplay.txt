@@ -88,45 +88,15 @@ in suit sequences in the foundation piles to win!
 
 
 
-
-________   Spit  ________
-
-Objective: The winner is the first player to get rid of all of their cards.
-
-Card Values: 2 decks of cards, A (high or low) K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2.
-
-Set-Up: Each player has their own deck and begins by placing the top four cards from their deck face up in front of
- them in a row. There should be lots of empty space in the middle of the table between the two players. (In fact it is
- best to play on the floor, since cards often go flying once play starts.) Players hold the remainder of their deck in one
- of their hands during play.
-
-
-Game Play: There are no turns taken in this game, everyone plays at the same time. When both players are ready, one of them
-says "spit" and immediately each player takes the top card from his deck and plays it to the center of the table.
-These first cards should be far away from each other, forming two play piles between the players. Players immediately begin playing
-their cards from their layout onto the center piles. A card can be played only if it is one higher or one lower than the card on the top of the pile.
-The card's suit does not matter, and an ace can be played high or low.
-
-The players continue to rapidly play cards to the center and replace cards in their rows until all players get
- "stuck" and cannot make a play. Often several dozen cards can be played before all players get stuck. When all players
- are stuck, they say "ready, spit," and again deal new starter cards to the top of each pile in the center. Play then continues as before.
-
-
-Score: When a player has played all the cards in their deck, they must continue play using only the cards left in their layout
- (even though he will not have a card to "spit" with if all players get stuck). When that player "goes out" by playing the last card from
- their layout row, they win. If both players have run out their decks and get stuck before going out, the player with the fewest cards left wins.
-
-
-
 ________   American Roulette   ________
 
-Wheel: Virtually all American casinos use a double-zero roulette wheel which has pockets numbered from 1 to 36, plus 0 and 00 for a total of 38 pockets.
+Wheel: Virtually all American casinos use a double-zero roulette wheel which has pockets numbered from 1 to 36, plus 0 for a total of 37 pockets.
 
 Betting: You can make a straight bet where you only bet on one number and if it comes in you'll be paid 35-to-1.
 The casino advantage on this bet is 5.26% and by the time you're done with this roulette section I'm sure you'll be very familiar with that number.
 
 Another choice you have is to do a split. This is where you put a chip on the line that separates two numbers.
- If either number comes up you'll be paid at 17-to-1. The casino advantage on this bet is 5.26%.
+If either number comes up you'll be paid at 17-to-1. The casino advantage on this bet is 5.26%.
 
 If you put a chip in an area that splits 4 numbers this is called a corner bet and if any one of those 4 numbers comes in you will be paid off at 8-to-1.
 The casino advantage on this bet is 5.26%.
@@ -137,34 +107,28 @@ The casino advantage on this bet is 5.26%.
 You can also put a chip on the line between two streets so that you have a double street covered and if any one of those 6 numbers
 come in you. ll be paid off at 5-to-1. The casino advantage on this bet is?... you guessed it...5.26%.
 
-Red or black - If you put a chip on red then a red number must come up in order for you to win. If the ball lands on a black number, 0 or 00 - you lose.
-The same thing goes for black - you lose if it comes in red, 0 or 00 and you win if the ball lands on a black number.
+Red or black - If you put a chip on red then a red number must come up in order for you to win. If the ball lands on a black number, 0 - you lose.
+The same thing goes for black - you lose if it comes in red, 0 and you win if the ball lands on a black number.
 
-Odd or even - If you put a chip on odd then the ball must land on an odd number in order for you to win. If it lands on 0, 00, or an even number - you lose.
- If you bet on even, you win if an even number shows up and lose if the ball lands on 0, 00 or an odd number.
+Odd or even - If you put a chip on odd then the ball must land on an odd number in order for you to win. If it lands on 0, or an even number - you lose.
+If you bet on even, you win if an even number shows up and lose if the ball lands on 0 or an odd number.
 
-1 through 18 and 19 through 36(high or low bet) - If you bet on 1 through 18, then you win if a number from 1 through 18 comes in and you lose if the ball lands
- on 0, 00 or a number higher than 18. Similarly, if you bet on 19 through 36, you win if one of those numbers comes in and you lose on 0, 00 or any number lower than 19.
+1 through 18 and 19 through 36(high or low bet) - If you bet on 1 through 18, then you win if a number from 1 through 18 comes in and you lose if the ball 
+lands on 0 or a number higher than 18. Similarly, if you bet on 19 through 36, you win if one of those numbers comes in and you lose on 0 or any 
+number lower than 19.
 
 The last bet to look at is the column bet and that is also a bet that pays 2-to-1. There are three possible column bets you can make and you'll
 notice that each area corresponds to the numbers in the column directly above it. So, if you put a chip under the first column you will win if any
-of the numbers in that column come in and you will lose if any other number, including 0 or 00 shows up.
+of the numbers in that column come in and you will lose if any other number, including 0 shows up.
 
 
+How To Play Our Roulette!
 
-
-________  SlapJack  ________
-
-Objective: The goal is to win all the cards, by being first to slap each jack as it is played to the center.
-
-The Deal: Deal cards one at a time face down, to each player until all the cards have been dealt. The hands do not have to come out even.
-Without looking at any of the cards, each player squares up their hand into a neat pile in front of them.
-
-Game Play: Beginning on the dealer’s left, each player lifts one card at a time from their pile and places it face up in the center of the table.
-When the card played to the center is a jack, the fun begins! The first player to slap their hand down on the jack takes it, as well as all the cards
- beneath it. The player winning these cards turns them face down, places them under their pile of cards, and shuffles them to form a new, larger pile.
-
-When more than one player slaps at a jack, the one whose hand is directly on top of the jack wins the pile. If a player slaps at any card in
-the center that is not a jack, they must give one card, face down, to the player of that card. When a player has no more cards left, they remain in
-the game until the next jack is turned. The player may slap at the jack in an effort to get a new pile. If the player fails to win
- that next pile, they are out of the game.
+1. Click chips on the left hand side of the game to add to the total amount of money in your hand
+2. Once you have money in your hand, you can place bets on any eligible roulette betting spot on the board
+        - You may place as many bets as you like on as many spots as you like unless you run out of payroll
+        - You may place more money on a previous bet
+        - You are not forced to bet money at all if you want to wait a turn to bet. Just press the spin button to skip your turn.
+3. Once ready to play, press the spin button and watch the wheel spin! The number will be flashed on the screen and you can see if your a winner!
+        - If you have multiple players, pressing the Spin button will move to the next player until the last player has decided if they will place bets/
+4. Winnings will be displayed above your payroll and you can bet again!

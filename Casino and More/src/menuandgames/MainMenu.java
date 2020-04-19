@@ -3,6 +3,7 @@ package menuandgames;
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
 
 
 public class MainMenu extends ScreenConfig{
@@ -11,8 +12,6 @@ public class MainMenu extends ScreenConfig{
     private JButton howTo;
     private JButton blackjack;
     private JButton solitaire;
-    //private JButton spit;
-    //private JButton slapjack;
     private JButton roulette;
 
     Image CasinoAndMoreLogo = new ImageIcon("Casino and More/res/CasinoAndMoreLogo.png").getImage();
@@ -56,7 +55,7 @@ public class MainMenu extends ScreenConfig{
         Icon blackjackButton = new ImageIcon(tempBlackjackImg);
         blackjack = new JButton(blackjackButton);
         this.add(blackjack);
-        blackjack.setBounds(280, 400, 400, 175);
+        blackjack.setBounds(480, 400, 400, 175);
         blackjack.setFocusPainted(false);
         blackjack.addActionListener(new blackjackListener());
 
@@ -66,35 +65,9 @@ public class MainMenu extends ScreenConfig{
         Icon solitaireButton = new ImageIcon(tempSolitaireImg);
         solitaire = new JButton(solitaireButton);
         this.add(solitaire);
-        solitaire.setBounds(280, 650, 400, 175);
+        solitaire.setBounds(480, 650, 400, 175);
         solitaire.setFocusPainted(false);
         solitaire.addActionListener(new solitaireListener());
-
-        
-        //spit logo button
-        /*
-        Image tempSpit = new ImageIcon("Casino and More/res/SpitMenuLogo.png").getImage();
-        Image tempSpitImg = tempSpit.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
-        Icon SpitButton = new ImageIcon(tempSpitImg);
-        spit = new JButton(SpitButton);
-        this.add(spit);
-        spit.setBounds(780, 400, 400, 175);
-        spit.setFocusPainted(false);
-        spit.addActionListener(new spitListener());
-        */
-
-
-        //slapjack logo button
-        /*
-        Image tempSlapjack = new ImageIcon("Casino and More/res/SlapJackMenuLogo.jpg").getImage();
-        Image tempSlapjackImg = tempSlapjack.getScaledInstance(400,175,java.awt.Image.SCALE_SMOOTH);
-        Icon SlapJackButton = new ImageIcon(tempSlapjackImg);
-        slapjack = new JButton(SlapJackButton);
-        this.add(slapjack);
-        slapjack.setBounds(780, 650, 400, 175);
-        slapjack.setFocusPainted(false);
-        slapjack.addActionListener(new slapjackListener());
-        */
 
         //roulette logo button
         Image tempRoulette = new ImageIcon("Casino and More/res/RouletteMenuLogo.png").getImage();
@@ -102,7 +75,7 @@ public class MainMenu extends ScreenConfig{
         Icon RouletteButton = new ImageIcon(tempRouletteImg);
         roulette = new JButton(RouletteButton);
         this.add(roulette);
-        roulette.setBounds(1250, 525, 400, 175);
+        roulette.setBounds(1050, 525, 400, 175);
         roulette.setFocusPainted(false);
         roulette.addActionListener(new rouletteListener());
     }
@@ -131,12 +104,26 @@ class howToListener implements ActionListener {
         howToFrame.setResizable(false);
 
         JTextArea textArea = new JTextArea(); //actual text box area for text to display
+        textArea.setBackground(new Color(0,105,0));
+        textArea.setForeground(Color.WHITE);
         JScrollPane scroll = new JScrollPane(textArea); //gives ability to see entire document by scrolling
         scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS); //set a vertical bar at all times
         scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); //never have a horizontal bar
-        howToFrame.add(new HowToPlay(textArea));
+        textArea.setEditable(false); //dont let text be editable
+        textArea.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 16));
+        
+        try{
+            InputStream in = CasinoAndMore.class.getResourceAsStream("Casino and More/res/howtoplay.txt");
+            char[] cbuf = new char[3400];
+            InputStreamReader inr = new InputStreamReader(in);
+            while(inr.read(cbuf, 0, cbuf.length) != -1){}
+            String str = new String(cbuf);
+            textArea.append(str);
+        }
+        catch(IOException e){}
+        howToFrame.add(textArea);
         howToFrame.add(scroll);
-        textArea.setCaretPosition(0); //start at the top of the document when clicked on
+        //textArea.setCaretPosition(0); //start at the top of the document when clicked on
     }
 }
 
@@ -152,20 +139,7 @@ class blackjackListener implements ActionListener {
         blackjackFrame.add(blackjack);
     }
 }
-/*
-class spitListener implements ActionListener {
-    JFrame spitFrame = new JFrame();
 
-    @Override
-    public void actionPerformed(ActionEvent event){
-        spitFrame.setSize(1920,1080);
-        spitFrame.setVisible(true);
-        spitFrame.setResizable(false);
-        Spit spit = new Spit();
-        spitFrame.add(spit);
-    }
-}
-*/
 class solitaireListener implements ActionListener {
     JFrame solitaireFrame = new JFrame();
 
@@ -178,29 +152,16 @@ class solitaireListener implements ActionListener {
         solitaireFrame.add(solitaire);
     }
 }
-/*
-class slapjackListener implements ActionListener {
-    JFrame slapjackFrame = new JFrame();
 
-    @Override
-    public void actionPerformed(ActionEvent event){
-        slapjackFrame.setSize(1920,1080);
-        slapjackFrame.setVisible(true);
-        slapjackFrame.setResizable(false);
-        SlapJack slapjack = new SlapJack();
-        slapjackFrame.add(slapjack);
-    }
-}
-*/
 class rouletteListener implements ActionListener {
     JFrame screen = new JFrame("Roulette");
 
     @Override
     public void actionPerformed(ActionEvent event){
-        screen.setSize(1200,800); //set default size to 1200,800
+        RoulettePanel roulette = new RoulettePanel(); //add a new a Roulettepanel (JPanel) into the JFrame
+        screen.add(roulette);
+        screen.setSize(1920,1080); //set default size to 1920,1080
         screen.setVisible(true);
         screen.setResizable(false);
-        Roulette roulette = new Roulette(); //add a new a Roulettepanel (JPanel) into the JFrame
-        screen.add(roulette);
     }
 }
