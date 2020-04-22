@@ -14,6 +14,9 @@ public class MainMenu extends ScreenConfig{
     private JButton solitaire;
     private JButton roulette;
 
+    public int numPlayers = 1;
+    public int bankRoll = 10000;
+
     Image CasinoAndMoreLogo = new ImageIcon("Casino and More/res/CasinoAndMoreLogo.png").getImage();
 
     @Override
@@ -21,7 +24,6 @@ public class MainMenu extends ScreenConfig{
         super.paintComponent(g);
         g.drawImage(CasinoAndMoreLogo, 600, 50, 720, 300, this); //add the logo to the mainmenu
     }
-
 
     public MainMenu(){
         //settings button
@@ -35,7 +37,8 @@ public class MainMenu extends ScreenConfig{
         settings.setOpaque(false);
         settings.setContentAreaFilled(false);
         settings.setFocusPainted(false);
-        settings.addActionListener(new settingsListener());
+        settingsListener listen = new settingsListener();
+        settings.addActionListener(listen);
 
         //how to play / information button
         Image tempHowTo = new ImageIcon("Casino and More/res/InformationHowToIcon.jpg").getImage();
@@ -79,18 +82,29 @@ public class MainMenu extends ScreenConfig{
         roulette.setFocusPainted(false);
         roulette.addActionListener(new rouletteListener());
     }
-}
+
 
 class settingsListener implements ActionListener {
-    JFrame settingsFrame = new JFrame();
+    private JFrame settingsFrame;
+    public Settings settings;
     
     @Override
     public void actionPerformed(ActionEvent event){ //go to new JFrame for button clicked for each actionlistener
+        settingsFrame = new JFrame();
         settingsFrame.setSize(1920,1080);
         settingsFrame.setVisible(true);
         settingsFrame.setResizable(false);
-        Settings settings = new Settings();
+        settings = new Settings();
         settingsFrame.add(settings);
+        settingsFrame.addWindowListener(new WindowAdapter()
+        {
+            public void windowClosing(WindowEvent evt)
+            {
+                numPlayers = settings.getPlayerNum();
+                bankRoll = settings.getBankRoll();
+                return;
+            }
+        });
     }
 }
 
@@ -158,10 +172,11 @@ class rouletteListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event){
-        RoulettePanel roulette = new RoulettePanel(); //add a new a Roulettepanel (JPanel) into the JFrame
+        RoulettePanel roulette = new RoulettePanel(numPlayers, bankRoll); //add a new a Roulettepanel (JPanel) into the JFrame
         screen.add(roulette);
         screen.setSize(1920,1080); //set default size to 1920,1080
         screen.setVisible(true);
         screen.setResizable(false);
     }
+}
 }

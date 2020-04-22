@@ -117,13 +117,13 @@ public class RoulettePanel extends JPanel{
     private gameListener gl;
 
     private int numPlayers;
-    private String dialog = "0";
 
-    public RoulettePanel(){
-        while(!(Integer.parseInt(dialog) == 1 || Integer.parseInt(dialog) == 2 || Integer.parseInt(dialog) == 3 || Integer.parseInt(dialog) == 4)){
-            dialog = JOptionPane.showInputDialog(this, "Enter number of players 1-4:", null); //pop up window to get number of players before game starts
-        }
-        numPlayers = Integer.parseInt(dialog);
+    public RoulettePanel(int num, int payroll){
+        numPlayers = num;
+        defaultNum = payroll;
+        defaultNum2 = payroll;
+        defaultNum3 = payroll;
+        defaultNum4 = payroll;
         for(int i = 0; i < 4; i++)
         {
             for(int j = 0; j < 157; j++){
