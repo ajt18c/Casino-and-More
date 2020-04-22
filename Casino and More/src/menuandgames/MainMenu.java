@@ -142,14 +142,16 @@ class howToListener implements ActionListener {
 }
 
 class blackjackListener implements ActionListener {
-    JFrame blackjackFrame = new JFrame();
+    JFrame blackjackFrame;
+    BlackJack blackjack;
 
     @Override
     public void actionPerformed(ActionEvent event){
+        blackjackFrame = new JFrame();
         blackjackFrame.setSize(1920,1080);
         blackjackFrame.setVisible(true);
         blackjackFrame.setResizable(false);
-        BlackJack blackjack = new BlackJack();
+        blackjack = new BlackJack(numPlayers);
         blackjackFrame.add(blackjack);
     }
 }

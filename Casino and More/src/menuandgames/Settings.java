@@ -60,6 +60,12 @@ public class Settings extends ScreenConfig{
         numPlayerLabel.setForeground(Color.WHITE);
         numPlayerLabel.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 40));
         this.add(numPlayerLabel);
+        
+        JLabel maxNum = new JLabel("(Max. 3 for BlackJack)");
+        maxNum.setBounds(750, 50, 600, 80);
+        maxNum.setForeground(Color.WHITE);
+        maxNum.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 40));
+        this.add(maxNum);
 
         bankRollLabel = new JLabel("Enter Bankroll Amount: ");
         bankRollLabel.setBounds(740, 300, 600, 100);
