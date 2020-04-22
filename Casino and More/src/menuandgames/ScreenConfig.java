@@ -16,5 +16,4 @@ public abstract class ScreenConfig extends JPanel{ //this class allows for a bas
     public ScreenConfig(){
         
     }
-    //TODO read settings file
 }

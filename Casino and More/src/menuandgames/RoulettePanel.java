@@ -43,9 +43,6 @@ public class RoulettePanel extends JPanel{
     //private Image FiveHundredChip = new ImageIcon(getClass().getResource("Casino and More/res/500Chip.png")).getImage().getScaledInstance(200, 200, java.awt.Image.SCALE_SMOOTH);
     private Icon FiveHundredChipIcon = new ImageIcon(FiveHundredChip);
 
-    private Image howToPlayImage = new ImageIcon("Casino and More/res/InformationHowToIcon.jpg").getImage().getScaledInstance(50,50,java.awt.Image.SCALE_SMOOTH);
-    //private Image howToPlayImage = new ImageIcon(getClass().getResource("Casino and More/res/InformationHowToIcon.jpg")).getImage().getScaledInstance(50, 50, java.awt.Image.SCALE_SMOOTH);
-
     private Image spinImage = new ImageIcon("Casino and More/res/SpinButton.png").getImage().getScaledInstance(325,325,java.awt.Image.SCALE_SMOOTH);
     //private Image spinImage = new ImageIcon(getClass().getResource("Casino and More/res/SpinButton.png")).getImage().getScaledInstance(225, 225, java.awt.Image.SCALE_SMOOTH);
     private Icon spinButton = new ImageIcon(spinImage);

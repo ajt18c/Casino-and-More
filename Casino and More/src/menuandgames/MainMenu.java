@@ -168,11 +168,13 @@ class solitaireListener implements ActionListener {
 }
 
 class rouletteListener implements ActionListener {
-    JFrame screen = new JFrame("Roulette");
+    private JFrame screen;
+    private RoulettePanel roulette;
 
     @Override
     public void actionPerformed(ActionEvent event){
-        RoulettePanel roulette = new RoulettePanel(numPlayers, bankRoll); //add a new a Roulettepanel (JPanel) into the JFrame
+        screen = new JFrame();
+        roulette = new RoulettePanel(numPlayers, bankRoll); //add a new a Roulettepanel (JPanel) into the JFrame
         screen.add(roulette);
         screen.setSize(1920,1080); //set default size to 1920,1080
         screen.setVisible(true);
