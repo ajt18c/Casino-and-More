@@ -6,9 +6,6 @@ import java.awt.*;
 
 public class BlackJack extends ScreenConfig implements ActionListener{
     private Deck deck;
-    private JButton hit;
-    private JButton stand;
-    private JButton newGame;
     private JTextArea status;
     private int numPlayers;
     private int currentPlayer;
@@ -20,27 +17,27 @@ public class BlackJack extends ScreenConfig implements ActionListener{
         this.numPlayers = (numPlayers <= 3)? numPlayers : 3;
         players = new BJPlayer[numPlayers+1];
 
-        hit = new JButton("HIT");
+        JButton hit = new JButton("HIT");
 	    hit.setBounds(960, 450, 150, 75);
 		hit.addActionListener(this);
         add(hit);
 
-        stand = new JButton("STAND");
+        JButton stand = new JButton("STAND");
 	    stand.setBounds(960, 555, 150, 75);
 		stand.addActionListener(this);
         add(stand);
 
-        newGame = new JButton("NEWGAME");
+        JButton newGame = new JButton("NEWGAME");
 	    newGame.setBounds(1210, 450, 150, 75);
 		newGame.addActionListener(this);
         add(newGame);
 
-        status = new JTextArea("Player 1's turn (Bottom)");
+        status = new JTextArea();
         status.setBounds(1210, 555, 200, 75);
         status.setForeground(Color.RED);
         status.setOpaque(false);
         status.setEditable(false);
-        status.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 15));
+        status.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 17));
         add(status);
 
         newGame();
@@ -55,31 +52,65 @@ public class BlackJack extends ScreenConfig implements ActionListener{
             players[i].draw(deck.draw());
         }
 
+        status.setText("Player 1's turn (Bottom)");
+        checkStatus();
+    }
+
+    private void checkStatus() {
         while(players[currentPlayer].getTotal() >= 21 && currentPlayer != numPlayers){
             currentPlayer++;
             String local;
             if(currentPlayer == 1)
                 local = "Left";
-            else if(currentPlayer == 2)
-                local = "Right";
             else
-                local = "Top";
-            status.setText("Player " + (currentPlayer+1) + "\'s turn (" + local + ")"); 
+                local = "Right";
+            status.setText("Player " + (currentPlayer+1) + "\'s turn (" + local + ")");
         }
 
         if(currentPlayer == numPlayers) {
-            while(players[currentPlayer].getTotal() < 17) {
-                players[currentPlayer].draw(deck.draw());
+            if(!playersBust()) {
+                while(players[currentPlayer].getTotal() < 17)
+                    players[currentPlayer].draw(deck.draw());
             }
-            status.setText("Winners: ");
-                for(int i = 0; i < numPlayers; i++) {
-                    if(players[i].getTotal() < 21 && (players[i].getTotal() > players[numPlayers].getTotal() || players[numPlayers].getTotal() > 21)) {
-                        status.setText(status.getText() + "\nPlayer " + (i+1));
-                    }
+            status.setText("Winners:");
+            for(int i = 0; i < numPlayers; i++) {
+                if(players[i].getTotal() <= 21 && (players[i].getTotal() > players[numPlayers].getTotal() || players[numPlayers].getTotal() > 21)) {
+                    status.setText(status.getText() + "\nPlayer " + (i+1));
                 }
-            repaint();
+            }
+            if(status.getText().equals("Winners:"))
+                status.setText("Dealer Wins");    
         }
+        repaint();
+    }
 
+    private boolean playersBust() {
+        for(int i = 0; i < numPlayers; i++)
+            if(players[i].getTotal() <= 21)
+                return false;
+        return true;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String act = e.getActionCommand();
+
+        if(act.equals("NEWGAME"))
+            newGame();
+        else if(currentPlayer != numPlayers) {
+            if(act.equals("HIT"))
+                players[currentPlayer].draw(deck.draw());
+            else if(act.equals("STAND")){
+                currentPlayer++;
+                String local;
+                if(currentPlayer == 1)
+                    local = "Left";
+                else
+                    local = "Right";
+                status.setText("Player " + (currentPlayer+1) + "\'s turn (" + local + ")");
+            }
+            checkStatus();
+        }
     }
 
     @Override
@@ -130,70 +161,6 @@ public class BlackJack extends ScreenConfig implements ActionListener{
                 g.drawLine(1500, 0, 1920, 1080);
                 g.drawLine(1500, 1080, 1920, 0);
             }
-        }
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        String act = e.getActionCommand();
-
-        if(act.equals("HIT") && currentPlayer != numPlayers) {
-            players[currentPlayer].draw(deck.draw());
-
-            while(players[currentPlayer].getTotal() >= 21 && currentPlayer != numPlayers) {
-                currentPlayer++;
-                String local;
-                if(currentPlayer == 1)
-                    local = "Left";
-                else if(currentPlayer == 2)
-                    local = "Right";
-                else
-                    local = "Top";
-                status.setText("Player " + (currentPlayer+1) + "\'s turn (" + local + ")");  
-            }
-            
-            if(currentPlayer == players.length-1) {
-                while(players[currentPlayer].getTotal() < 17) {
-                    players[currentPlayer].draw(deck.draw());
-                }
-                status.setText("Winners: ");
-                for(int i = 0; i < numPlayers; i++) {
-                    if(players[i].getTotal() < 21 && (players[i].getTotal() > players[numPlayers].getTotal() || players[numPlayers].getTotal() > 21)) {
-                        status.setText(status.getText() + "\nPlayer " + (i+1));
-                    }
-                }
-
-            }
-
-            repaint();
-        }
-        else if(act.equals("STAND") && currentPlayer != numPlayers) {
-            currentPlayer++;
-            while(players[currentPlayer].getTotal() >= 21 && currentPlayer != numPlayers) {
-                currentPlayer++;
-                String local;
-                if(currentPlayer == 1)
-                    local = "Left";
-                else
-                    local = "Right";
-                status.setText("Player " + (currentPlayer+1) + "\'s turn (" + local + ")");  
-            }
-            if(currentPlayer == players.length-1) {
-                while(players[currentPlayer].getTotal() < 17) {
-                    players[currentPlayer].draw(deck.draw());
-                }
-                status.setText("Winners: ");
-                for(int i = 0; i < numPlayers; i++) {
-                    if(players[i].getTotal() < 21 && (players[i].getTotal() > players[numPlayers].getTotal() || players[numPlayers].getTotal() > 21)) {
-                        status.setText(status.getText() + "\nPlayer " + (i+1));
-                    }
-                }
-                repaint();
-            }   
-        }
-        else if(act.equals("NEWGAME")) {
-            newGame();
-            repaint();
         }
     }
 }
