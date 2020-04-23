@@ -3,42 +3,17 @@ HOW TO PLAY
 
 _______     BlackJack   _______
 
-Objective: Each participant attempts to beat the dealer by getting a count as
-close to 21 as possible, without going over 21.
-
-Card Values: It is up to each individual player if an ace is worth 1 or 11.
-Face cards are 10 and any other card is its pip value.
-
-Betting: Before the deal begins, each player places a bet, in chips, in front
-of them in the designated area. Minimum and maximum limits are established on
-the betting.
-
-Game Play: Game begins when all players enter starting bet. Dealer then deals 2 cards
-to each player staring with the player directly left of the dealer. Player can choose
-to either "stand"(not ask for another card) or "hit"(ask for another card in an
-attempt to get closer to a count of 21, or even hit 21 exactly). When a player's card
- values go over 21 that is called "bust" and the dealer will collect your wages bet.
-
-Dealer's Play: When the dealer has served every player, the dealers face-down card is
-turned up. If the total is 17 or more, it must stand. If the total is 16 or under, they
-must take a card. The dealer must continue to take cards until the total is 17 or more,
-at which point the dealer must stand.
-
-Splitting Pairs:If a player's first two cards are of the same denomination, such as
-two jacks or two sixes, they may choose to treat them as two separate hands when
-their turn comes around. The amount of the original bet then goes on one of the cards,
-and an equal amount must be placed as a bet on the other card. The player first plays
-the hand to their left by standing or hitting one or more times; only then is the hand
-to the right played. The two hands are thus treated separately, and the dealer settles
-with each on its own merits.
-
-
-Doubling Down: Another option open to the player is doubling their bet when the original
-two cards dealt total 9, 10, or 11. When the player's turn comes, they place a bet equal
-to the original bet, and the dealer gives the player just one card, which is placed
-face down and is not turned up until the bets are settled at the end of the hand.
-With two fives, the player may split a pair, double down, or just play the hand in
-the regular way.
+The goal of Blackjack is to have all your cards total to as close to 21 without going over as possible.
+Aces count as 11 or 1, depending on which is more beneficial. Face cards all count as 10. 
+On a player’s turn, they may “hit” (draw) as many cards as they want until they “bust” (go over 21), 
+or the player may “stand” (keep their current cards). 
+The dealer plays last and each player’s cards are compared to the dealer’s cards to determine if they won. 
+Any player who gets a higher total value than the dealer, without busting, wins. 
+If the dealer busts, then every player who did not bust wins. 
+There may be 1-3 players, besides the dealer. 
+This is chosen in the settings menu (if 4 is chosen, then the players will default to 3). 
+A status bar will tell you which players turn it is and who has won. 
+A new game may be started by clicking the button labeled “NEWGAME”.
 
 
 
