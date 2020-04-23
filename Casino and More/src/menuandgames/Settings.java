@@ -20,7 +20,7 @@ public class Settings extends ScreenConfig{
         this.setLayout(null);
         button1 = new JButton("1");
         button1.setBounds(425, 150, 250, 50);
-        button1.addActionListener(new ActionListener(){
+        button1.addActionListener(new ActionListener(){ //number of player buttons that set member data for blackjack and roulette
             public void actionPerformed(ActionEvent e)
             {
                numPlayers = 1;
@@ -55,6 +55,7 @@ public class Settings extends ScreenConfig{
         this.add(button3);
         this.add(button4);
 
+        // all labels for the JFrame
         numPlayerLabel = new JLabel("Choose number of Players:");
         numPlayerLabel.setBounds(710, 5, 600, 80);
         numPlayerLabel.setForeground(Color.WHITE);
@@ -82,11 +83,11 @@ public class Settings extends ScreenConfig{
         this.setVisible(true);
     }
 
-    public int getPlayerNum(){
+    public int getPlayerNum(){ //getter function for access outside class
         return numPlayers;
     }
 
-    public int getBankRoll(){
+    public int getBankRoll(){ //getter function for access outside class
         return Integer.parseInt(area.getText());
     }
 }

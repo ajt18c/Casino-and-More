@@ -621,7 +621,7 @@ public class RoulettePanel extends JPanel{
             return Integer.parseInt(handCounter4.getText()) + bet;
     }
 
-    public void goToGame(){
+    public void goToGame(){ //start a game once timer is done
         gl.hideMessage();
         gl.gameStart();
     }
