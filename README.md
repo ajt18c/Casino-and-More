@@ -56,4 +56,24 @@ Version 1.0.0
 - Adjusted Card (each card now holds an image instead of a path) and Deck
 - Created a working version of Blackjack with functional requirements
 
+Version 2.0.0
+4/23 (Brandon)
+- Did all work for Solitaire
+- Created RotateWheel class for Roulette
+- Did RD Template
+
+4/23 (Alex)
+- Did all work except RotateWheel for Roulette
+- Created Settings for all Roulette features
+- Deleted all extra code from all classes
+- Did Progress Report
+- Put Video together
+- Fixed HowToPlay to work in JAR File along with all images for Roulette
+
+4/23 (David)
+- Did all work for Blackjack
+- Did IT testing Document
+- Added Card Back option to Settings
+- Added settings functionality for Blackjack
+
 
