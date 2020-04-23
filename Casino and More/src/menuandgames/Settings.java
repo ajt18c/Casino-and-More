@@ -117,13 +117,11 @@ public class Settings extends ScreenConfig {
         setVisible(true);
     }
 
-    // Returns the number of players
-    public int getPlayerNum(){
+    public int getPlayerNum(){ //getter function for access outside class
         return numPlayers;
     }
 
-    // Returns the bank roll
-    public int getBankRoll(){
+    public int getBankRoll(){ //getter function for access outside class
         return Integer.parseInt(area.getText());
     }
 }
