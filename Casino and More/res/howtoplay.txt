@@ -61,6 +61,13 @@ another card in the stock pile.
 Continue to transfer cards in the tableau and bring cards into play from the stock pile until all the cards are built
 in suit sequences in the foundation piles to win!
 
+How to Play Our Solitaire!
+- to move an ace to a suitpile just click on it.
+- to move an king to a empty row just click on it.
+- to get a card from the pile click on the pile(the cardback image)
+- to move a card to a different row, first click on the card you want to select then click on the card you want to move it to.
+- to put the cards back in the pile when the pile has run out, click on the card face up next to the pile.
+
 
 
 ________   American Roulette   ________
