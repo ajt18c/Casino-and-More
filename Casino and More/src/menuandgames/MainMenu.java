@@ -4,6 +4,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
+import java.nio.file.*;
 
 
 public class MainMenu extends ScreenConfig{
@@ -125,19 +126,13 @@ class howToListener implements ActionListener {
         scroll.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER); //never have a horizontal bar
         textArea.setEditable(false); //dont let text be editable
         textArea.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 16));
-        
         try{
-            InputStream in = CasinoAndMore.class.getResourceAsStream("Casino and More/res/howtoplay.txt");
-            char[] cbuf = new char[3400];
-            InputStreamReader inr = new InputStreamReader(in);
-            while(inr.read(cbuf, 0, cbuf.length) != -1){}
-            String str = new String(cbuf);
+            String str = new String(Files.readAllBytes(Paths.get("Casino and More/res/howtoplay.txt")));
             textArea.append(str);
         }
         catch(IOException e){}
-        howToFrame.add(textArea);
         howToFrame.add(scroll);
-        //textArea.setCaretPosition(0); //start at the top of the document when clicked on
+        textArea.setCaretPosition(0); //start at the top of the document when clicked on
     }
 }
 
