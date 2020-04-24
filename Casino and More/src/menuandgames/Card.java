@@ -1,4 +1,4 @@
-package src.menuandgames;
+package menuandgames;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 // The cards in the deck
