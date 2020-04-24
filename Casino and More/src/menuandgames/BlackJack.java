@@ -37,7 +37,7 @@ public class BlackJack extends ScreenConfig implements ActionListener{
 
         // Sets a status bar for player turn and location, also tells who won
         status = new JTextArea();
-        status.setBounds(1210, 555, 200, 75);
+        status.setBounds(1210, 555, 200, 100);
         status.setForeground(Color.RED);
         status.setOpaque(false);
         status.setEditable(false);

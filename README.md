@@ -59,7 +59,9 @@ Version 1.0.0
 Version 2.0.0
 4/23 (Brandon)
 - Did all work for Solitaire
+- Worked on Card Class(added functions)
 - Created RotateWheel class for Roulette
+- Integrated Solitare into Casino and More
 - Did RD Template
 
 4/23 (Alex)

@@ -75,14 +75,17 @@ public class Settings extends ScreenConfig {
             public void actionPerformed(ActionEvent e) {
                 String action = e.getActionCommand();
 
-                if(action.equals("Get Image")) {
+                if(action.equals("Black") || action.equals("Red") || action.equals("Blue")) {
+                    Card.setBack("Casino and More/res/cards/backs/" + action + ".png");
+                }
+                else if(action.equals("Get Image")) {
                     if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
                         file.setText(chooser.getSelectedFile().getAbsolutePath());
                         set.setActionCommand(file.getText());
                     }
                 }
                 else if(!action.equals("Set Image")) {
-                    Card.setBack(action);
+                    Card.setBackFromComp(action);
                 }
             }
         };
@@ -93,7 +96,6 @@ public class Settings extends ScreenConfig {
         for(int i = 0; i < 3; i++) {
             backs[i].setBounds(500 + 300*i, 700, 250, 50);
             backs[i].addActionListener(backListener);
-            backs[i].setActionCommand("Casino and More/res/cards/backs/" + backs[i].getText() + ".png");
             add(backs[i]);
         }
 
