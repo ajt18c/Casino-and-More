@@ -33,7 +33,7 @@ public class Card {
 	}
     
     public static void setBack(String imgLocation) {
-        back = new ImageIcon(CasinoAndMore.class.getResource(imgLocation)).getImage();
+        back = new ImageIcon(imgLocation).getImage();
     }
 
     public static void setBackFromComp(String imgLocation) {
