@@ -30,8 +30,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
 
 
     public Solitaire(){
-        //super(null);
-
+        setLayout(null);
         flippedpile = new ArrayList<CardButton>(52);
         deck = new Deck();
 
@@ -268,7 +267,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
             if(selected == true){
                 oldreport = report;
                 if(report.equals("flippedpile") && flippedpile.get(flippedpile.size()-1).getcard().getName().equals("Ace")){ //move ace from flipped pile to suit pile
-                    if(flippedpile.get(flippedpile.size()-1).getcard().getSuit() == Suit.SPADES){
+                    if(flippedpile.get(flippedpile.size()-1).getcard().getSuit() == Card.Suit.SPADES){
                         flippedpile.get(flippedpile.size()-1).setLocation(450, 25);
                         flippedpile.get(flippedpile.size()-1).addActionListener(this);
                         flippedpile.get(flippedpile.size()-1).setActionCommand("spade pile");
@@ -286,7 +285,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
                         temp.setLocation(200, 25);
                         add(temp);
                     }
-                    else if(flippedpile.get(flippedpile.size()-1).getcard().getSuit() == Suit.HEARTS){
+                    else if(flippedpile.get(flippedpile.size()-1).getcard().getSuit() == Card.Suit.HEARTS){
                         flippedpile.get(flippedpile.size()-1).setLocation(600, 25);
                         flippedpile.get(flippedpile.size()-1).addActionListener(this);
                         flippedpile.get(flippedpile.size()-1).setActionCommand("heart pile");
@@ -304,7 +303,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
                         temp.setLocation(200, 25);
                         add(temp);
                     }
-                    else if(flippedpile.get(flippedpile.size()-1).getcard().getSuit() == Suit.DIAMONDS){
+                    else if(flippedpile.get(flippedpile.size()-1).getcard().getSuit() == Card.Suit.DIAMONDS){
                         flippedpile.get(flippedpile.size()-1).setLocation(750, 25);
                         flippedpile.get(flippedpile.size()-1).addActionListener(this);
                         flippedpile.get(flippedpile.size()-1).setActionCommand("diamond pile");
@@ -347,17 +346,17 @@ public class Solitaire extends ScreenConfig implements ActionListener{
                     int x3 = Integer.valueOf(i2);
                     int x4 = Integer.valueOf(j2);
                     if(tableau.get(x3).get(x4).getcard().getName() == "Ace"&& x4 == tableau.get(x3).size()-1 ){
-                        if(tableau.get(x3).get(x4).getcard().getSuit() == Suit.SPADES){
+                        if(tableau.get(x3).get(x4).getcard().getSuit() == Card.Suit.SPADES){
                             tableau.get(x3).get(x4).setLocation(450, 25);
                             tableau.get(x3).get(x4-1).flipcard();
                             spade.add(tableau.get(x3).remove(x4));
                         }
-                        else if(tableau.get(x3).get(x4).getcard().getSuit() == Suit.HEARTS){
+                        else if(tableau.get(x3).get(x4).getcard().getSuit() == Card.Suit.HEARTS){
                             tableau.get(x3).get(x4).setLocation(600, 25);
                             tableau.get(x3).get(x4-1).flipcard();
                             heart.add(tableau.get(x3).remove(x4));
                         }
-                        else if(tableau.get(x3).get(x4).getcard().getSuit() == Suit.DIAMONDS){
+                        else if(tableau.get(x3).get(x4).getcard().getSuit() == Card.Suit.DIAMONDS){
                             tableau.get(x3).get(x4).setLocation(750, 25);
                             tableau.get(x3).get(x4-1).flipcard();
                             diamond.add(tableau.get(x3).remove(x4));
@@ -422,7 +421,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
                     int x2 = Integer.valueOf(j);
 
                     if(i2.equals("s")){
-                        if(tableau.get(x1).get(x2).getcard().getSuit() == Suit.SPADES && tableau.get(x1).get(x2).getcard().getVal() == spade.get(spade.size()-1).getcard().getVal()+1){
+                        if(tableau.get(x1).get(x2).getcard().getSuit() == Card.Suit.SPADES && tableau.get(x1).get(x2).getcard().getVal() == spade.get(spade.size()-1).getcard().getVal()+1){
                             remove(spade.get(spade.size()-1));
                             tableau.get(x1).get(x2).setLocation(450, 25);
                             tableau.get(x1).get(x2).setActionCommand("spade pile");
@@ -430,7 +429,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
                         }
                     }
                     else if(i2.equals("c")){
-                        if(tableau.get(x1).get(x2).getcard().getSuit() == Suit.CLUBS && tableau.get(x1).get(x2).getcard().getVal() == club.get(club.size()-1).getcard().getVal()+1){
+                        if(tableau.get(x1).get(x2).getcard().getSuit() == Card.Suit.CLUBS && tableau.get(x1).get(x2).getcard().getVal() == club.get(club.size()-1).getcard().getVal()+1){
                             remove(club.get(club.size()-1));
                             tableau.get(x1).get(x2).setLocation(900, 25);
                             tableau.get(x1).get(x2).setActionCommand("club pile");
@@ -438,7 +437,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
                         }
                     }
                     else if(i2.equals("d")){
-                        if(tableau.get(x1).get(x2).getcard().getSuit() == Suit.DIAMONDS&& tableau.get(x1).get(x2).getcard().getVal() == diamond.get(diamond.size()-1).getcard().getVal()+1){
+                        if(tableau.get(x1).get(x2).getcard().getSuit() == Card.Suit.DIAMONDS&& tableau.get(x1).get(x2).getcard().getVal() == diamond.get(diamond.size()-1).getcard().getVal()+1){
                             remove(diamond.get(diamond.size()-1));
                             tableau.get(x1).get(x2).setLocation(750, 25);
                             tableau.get(x1).get(x2).setActionCommand("diamond pile");
@@ -446,7 +445,7 @@ public class Solitaire extends ScreenConfig implements ActionListener{
                         }
                     }
                     else{
-                        if(tableau.get(x1).get(x2).getcard().getSuit() == Suit.HEARTS && tableau.get(x1).get(x2).getcard().getVal() == heart.get(heart.size()-1).getcard().getVal()+1){
+                        if(tableau.get(x1).get(x2).getcard().getSuit() == Card.Suit.HEARTS && tableau.get(x1).get(x2).getcard().getVal() == heart.get(heart.size()-1).getcard().getVal()+1){
                             remove(heart.get(heart.size()-1));
                             tableau.get(x1).get(x2).setLocation(600, 25);
                             tableau.get(x1).get(x2).setActionCommand("heart pile");
