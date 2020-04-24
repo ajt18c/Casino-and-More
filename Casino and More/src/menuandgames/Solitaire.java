@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
 
-class Solitaire extends ScreenConfig implements ActionListener{
+public class Solitaire extends ScreenConfig implements ActionListener{
 
     /**
      *
@@ -30,7 +30,7 @@ class Solitaire extends ScreenConfig implements ActionListener{
 
 
     public Solitaire(){
-        super(null);
+        //super(null);
 
         flippedpile = new ArrayList<CardButton>(52);
         deck = new Deck();
