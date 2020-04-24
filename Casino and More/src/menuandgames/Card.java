@@ -38,6 +38,9 @@ public class Card {
     public static void setBack(String imgLocation) {
         back = new ImageIcon(imgLocation).getImage();
     }
+    public static void setBackFromComp(String imgLocation) {
+        back = new ImageIcon(imgLocation).getImage();
+    }
 
     // returns the value of the card
 	public int getVal() {

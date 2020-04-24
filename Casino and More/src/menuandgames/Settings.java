@@ -75,14 +75,17 @@ public class Settings extends ScreenConfig {
             public void actionPerformed(ActionEvent e) {
                 String action = e.getActionCommand();
 
-                if(action.equals("Get Image")) {
+                if(action.equals("Black") || action.equals("Red") || action.equals("Blue")) {
+                    Card.setBack(action);
+                }
+                else if(action.equals("Get Image")) {
                     if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
                         file.setText(chooser.getSelectedFile().getAbsolutePath());
                         set.setActionCommand(file.getText());
                     }
                 }
                 else if(!action.equals("Set Image")) {
-                    Card.setBack(action);
+                    Card.setBackFromComp(action);
                 }
             }
         };
