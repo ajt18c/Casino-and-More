@@ -3,7 +3,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 // The cards in the deck
 public class Card {
-    private static Image back = new ImageIcon("res/cards/backs/StockCardBack.png").getImage();
+    private static Image back = new ImageIcon("Casino and More/res/cards/backs/Red.png").getImage();
 	public enum Suit {SPADES, HEARTS, CLUBS, DIAMONDS}
 	private int val;
     private Suit suit;
@@ -15,19 +15,19 @@ public class Card {
         switch(suit){
             case 0:
                 this.suit = Suit.SPADES;
-                img = new ImageIcon("res/cards/" + String.valueOf(val) + "spade.png").getImage();
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "spade.png").getImage();
                 break;
             case 1:
                 this.suit = Suit.HEARTS;
-                img = new ImageIcon("res/cards/" + String.valueOf(val) + "heart.png").getImage();
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "heart.png").getImage();
                 break;
             case 2:
                 this.suit = Suit.CLUBS;
-                img = new ImageIcon("res/cards/" + String.valueOf(val) + "club.png").getImage();
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "club.png").getImage();
                 break;
             case 3:
                 this.suit = Suit.DIAMONDS;
-                img = new ImageIcon("res/cards/" + String.valueOf(val) + "diamond.png").getImage();
+                img = new ImageIcon("Casino and More/res/cards/" + String.valueOf(val) + "diamond.png").getImage();
             
         }
 	}
